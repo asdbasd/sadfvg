@@ -1,3 +1,54 @@
+
+Skip to content
+Navigation Menu
+PS4IDEA
+psfree
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Files
+Go to file
+t
+fonts
+kpatch
+module
+rop
+COPYING
+LICENSE
+README.md
+about.html
+alert.mjs
+cache.html
+config.mjs
+icon0.png
+index.html
+lapse.mjs
+payload.bin
+payload.js
+psfree.mjs
+psfree_lapse.cache
+send.mjs
+psfree
+/index.html
+PS4IDEA
+PS4IDEA
+Update index.html
+3b3a8af
+ · 
+yesterday
+psfree
+/index.html
+
+Code
+
+Blame
+43 lines (38 loc) · 1.65 KB
 <!-- Copyright (C) 2023-2025 anonymous
 
 This file is part of PSFree.
@@ -15,11 +66,14 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
+
 <html>
     <head>
         <meta charset='utf-8'>
         <title>PSFree-Lapse Exploit For 9.00</title>
         <style>
+            body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
+            .info{position:relative;top:39%;}
             @font-face {
                 font-family: 'logging';
                 src: url('fonts/LiberationMono-Regular.ttf');
@@ -29,14 +83,57 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             }
         </style>
     </head>
-    <body>
-        PSFree: A PS4/PS5 Exploit Chain<br>
-        Donation (Monero/XMR):<br>
-        86Fk3X9AE94EGKidzRbvyiVgGNYD3qZnuKNq1ZbsomFWXHYm6TtAgz9GNGitPWadkS3Wr9uXoT29U1SfdMtJ7QNKQpW1CVS<br>
-        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
-        source code and license.<br>
+    <body style="background-image: url('icon0.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center; min-height: 100vh;">
+      <script>
+       if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+      </script>
         <pre id='console'></pre>
     </body>
     <script src="payload.js"></script>
     <script type='module' src='./alert.mjs'></script>
 </html>
+psfree/index.html at master · PS4IDEA/psfree
+
+Explain
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url('background.jpg'); /* */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: gold;
+    }
+    p {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  
