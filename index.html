@@ -1,54 +1,4 @@
 
-Skip to content
-Navigation Menu
-PS4IDEA
-psfree
-
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Files
-Go to file
-t
-fonts
-kpatch
-module
-rop
-COPYING
-LICENSE
-README.md
-about.html
-alert.mjs
-cache.html
-config.mjs
-icon0.png
-index.html
-lapse.mjs
-payload.bin
-payload.js
-psfree.mjs
-psfree_lapse.cache
-send.mjs
-psfree
-/index.html
-PS4IDEA
-PS4IDEA
-Update index.html
-3b3a8af
- · 
-yesterday
-psfree
-/index.html
-
-Code
-
-Blame
-43 lines (38 loc) · 1.65 KB
 <!-- Copyright (C) 2023-2025 anonymous
 
 This file is part of PSFree.
@@ -83,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             }
         </style>
     </head>
-    <body style="background-image: url('icon0.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center; min-height: 100vh;">
+    <body>
       <script>
        if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
       </script>
@@ -92,48 +42,46 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <script src="payload.js"></script>
     <script type='module' src='./alert.mjs'></script>
 </html>
-psfree/index.html at master · PS4IDEA/psfree
-
-Explain
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title</title>
+  <title>مركز الزعيم</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-image: url('background.jpg'); /* */
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
       font-family: 'Arial', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
       color: white;
+      text-align: center;
     }
-    .overlay {
+    .content {
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
+      padding: 40px 20px;
       border-radius: 15px;
     }
     h1 {
       font-size: 48px;
-      margin-bottom: 20px;
       color: gold;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 32px;
+      font-size: 36px;
       letter-spacing: 2px;
     }
   </style>
 </head>
 <body>
-  
+  <div class="content">
+    <h1>مركز الزعيم</h1>
+    <p>07738883335</p>
+  </div>
+</body>
+</html>
