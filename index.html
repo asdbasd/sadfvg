@@ -1,4 +1,5 @@
 
+
 <!-- Copyright (C) 2023-2025 anonymous
 
 This file is part of PSFree.
@@ -21,7 +22,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <head>
         <meta charset='utf-8'>
         <title>PSFree-Lapse Exploit For 9.00</title>
-                    @font-face {
+        <style>
+            body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
+            .info{position:relative;top:39%;}
+            @font-face {
                 font-family: 'logging';
                 src: url('fonts/LiberationMono-Regular.ttf');
             }
@@ -30,7 +34,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('background.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center; min-height: 100vh;">
       <script>
        if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
       </script>
@@ -38,40 +42,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </body>
     <script src="payload.js"></script>
     <script type='module' src='./alert.mjs'></script>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .content {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px 20px;
-      border-radius: 15px;
-    }
-    h1 {
-      font-size: 48px;
-      color: gold;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 36px;
-      letter-spacing: 2px;
-    }
-  </style>
-</head>
 </html>
